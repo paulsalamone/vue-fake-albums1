@@ -9,7 +9,7 @@
         ><NavButton color="pink">Jazz</NavButton></router-link
       >
       <router-link to="/funk"
-        ><NavButton color="green">Funk</NavButton></router-link
+        ><NavButton color="lightgreen">Funk</NavButton></router-link
       >
     </nav>
   </div>
@@ -18,6 +18,9 @@
 <script>
 import NavButton from "./NavButton.vue";
 export default {
+  props: {
+    data: Array,
+  },
   components: {
     NavButton,
   },
@@ -26,7 +29,7 @@ export default {
 
 <style>
 h1 {
-  /* border: 1px solid yellow; */
   margin: 5px 20px;
+  font-size: 4rem;
 }
 </style>

@@ -1,5 +1,7 @@
 <template>
-  <h2 :style="{ color: color }"><slot></slot></h2>
+  <div>
+    <h2 :style="{ color: color }">///// <slot></slot>/////</h2>
+  </div>
 </template>
 
 <script>

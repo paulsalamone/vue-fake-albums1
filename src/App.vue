@@ -1,15 +1,19 @@
 <template>
   <div id="app">
-    <TopNav />
+    <TopNav :data="data" />
     <router-view />
   </div>
 </template>
 
 <script>
 import TopNav from "./components/TopNav.vue";
+
 export default {
   components: {
     TopNav,
+  },
+  data() {
+    return {};
   },
 };
 </script>
@@ -22,10 +26,10 @@ body {
   font-family: "Poppins", Arial, Helvetica, sans-serif;
 }
 
-h1 {
+/* h1 {
   font-weight: 900;
   font-size: 3rem;
-}
+} */
 nav a {
   color: green;
   text-decoration: none;
