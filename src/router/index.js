@@ -1,6 +1,7 @@
 import Vue from "vue";
 import VueRouter from "vue-router";
 
+import HomeView from "../views/HomeView.vue";
 import IndieView from "../views/IndieView.vue";
 import JazzView from "../views/JazzView.vue";
 import FunkView from "../views/FunkView.vue";
@@ -11,6 +12,11 @@ const routes = [
   {
     path: "/",
     name: "home",
+    component: HomeView,
+  },
+  {
+    path: "/indie",
+    name: "indie",
     component: IndieView,
   },
   {

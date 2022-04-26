@@ -1,8 +1,9 @@
 <template>
   <div>
-    <h1>FAKE LPs</h1>
+    <h1>FAKE LPs -- 2.0</h1>
     <nav>
-      <router-link to="/"
+      <router-link to="/"><NavButton color="white">All</NavButton></router-link>
+      <router-link to="/indie"
         ><NavButton color="yellow">Indie</NavButton></router-link
       >
       <router-link to="/jazz"
@@ -10,6 +11,12 @@
       >
       <router-link to="/funk"
         ><NavButton color="lightgreen">Funk</NavButton></router-link
+      >
+      <router-link to="/faves"
+        ><NavButton color="red">* Faves *</NavButton></router-link
+      >
+      <router-link to="/add"
+        ><NavButton color="darkgray">Add</NavButton></router-link
       >
     </nav>
   </div>
